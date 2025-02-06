@@ -1,0 +1,517 @@
+
+/*hitam : 322D29*/
+/*abu-abu : D9D9D9*/
+/*putih : FFF*/
+/*merah gelap : 72383D*/
+/*merah terang(hover) : 925056*/
+/*krem(background) : EFE9E1*/
+
+*{
+    font-family : 'Inter',sans-serif;
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family : 'Inter',sans-serif;
+    background-color: #EFE9E1;
+    color: #322D29;
+    font-size: 16px;
+    
+}
+
+
+
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding : 1.3rem 3% ;
+    background-color: #322D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo{
+    margin-right:5rem;
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+.navbar .search{
+    width: 38rem;
+    height: 7vh;
+    display: flex; 
+    /* border: 0.1rem solid white;
+    border-radius: 20rem; */
+}
+.navbar .search input{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+    
+} 
+.navbar .kanan{
+    margin-left:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.navbar .keranjang{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-right: 0.2rem;
+}
+.navbar .user{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-left: 0.2rem;
+}
+
+.keranjang :hover{
+    color: #925056;
+
+}
+.user:hover{
+    color: #925056;
+}
+
+
+.kumpulanbanner{
+    display: flex;
+}
+
+.banner{
+    min-height: 90vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;/*horisontal*/
+    justify-content: center;/*vertikal*/
+}
+
+#satu{
+    background-image: url(foto/banner\ 1.jpg);
+}
+
+#tiga{
+    display: none;
+    background-image: url(foto/banner\ 2.png);
+}
+#dua{
+    display: none;
+    background-image: url(foto/banner\ 3.jpg);
+}
+
+.tulisan{
+    margin-top: 15rem;
+    font-size: 3.2rem;
+    color: #D9D9D9;
+    opacity: 90%;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(1,1,3,0.8);
+}
+
+
+.banner .button{
+    margin-top: 3rem;
+    background-color: #322D29;
+    padding: 1rem 2rem;
+    border-radius: 20rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+    opacity: 82%;
+}
+.banner .button a{
+    margin-top: -1rem;
+    background-color: #322D29;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #D9D9D9;
+    
+}
+
+.banner .button:hover{
+    opacity: 70%;
+    
+}
+
+
+
+
+
+.bestseller{
+    padding: 2.5rem 7% 1.4rem;
+    margin-bottom: 5rem;
+}
+.bestseller h2, .bestseller a{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #322D29;
+}
+.bestseller h2:hover{
+    color: #72383D;
+}
+
+.kumpulanbaju{
+    padding: 0 0.5rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;/*vertikal*/ 
+    
+}
+
+
+.foto1 img, .foto2 img, .foto3 img, .foto4 img{
+    max-width: 15rem;
+    border-radius: 2rem;
+
+}
+
+.foto1 img:hover, .foto2 img:hover, .foto3 img:hover, .foto4 img:hover{
+    opacity: 70%;
+    
+}
+
+
+
+
+
+
+
+.katalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*horisontal*/
+    justify-content: center;/*vertikal*/
+}
+
+.katalog .kolomwanita{
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*horisontal*/
+    justify-content: center;/*vertikal*/
+    background-image: url(foto/women.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+    padding: 10rem 7% 1.4rem;
+}
+
+.katalog .kolompria{
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*horisontal*/
+    justify-content: center;/*vertikal*/
+    background-image: url(foto/man.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5rem;
+    padding: 10rem 7% 1.4rem;
+    
+}
+
+.kolomwanita h2, .kolompria h2{
+    font-size: 3rem;
+    color: #D9D9D9;
+    opacity: 90%;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px rgba(1,1,3,0.8);
+    
+}
+
+.kolompria .keseluruhan, .kolompria .tulisan, .kolomwanita .keseluruhan, .kolomwanita .tulisan{
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*horisontal*/
+    justify-content: center;
+    margin-top: 2rem; 
+    
+}
+
+.kolomwanita .buttonwanita,.kolompria .buttonpria {
+    width: 12rem;
+    background-color: #322D29;
+    padding: 1.2rem 1rem;
+    border-radius: 5rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+    opacity: 82%;
+    
+}
+
+.kolomwanita .buttonwanita p,.kolompria .buttonpria p{
+    text-align: center;
+    background-color: #322D29;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #D9D9D9;
+    
+    
+}
+
+.kolomwanita .buttonwanita:hover,.kolompria .buttonpria:hover{
+    opacity: 70%;
+
+    
+}
+
+.endpart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*horisontal*/
+    justify-content: center;/*vertikal*/
+    background-image: url(icon/end\ part.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 26rem 7% 1.4rem;
+    
+} 
+
+
+
+/*java*/
+
+ .navbar .hidden{
+    display: block;/*hrs block klo mau pakek margin*/
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:50%;
+    right: 8.5%;
+    background-color: #72383D;
+    width: 0rem;
+    height: 0vh;/*tinggi cuman di layar bkn induk*/
+    transition: 0.3s;
+    border-radius: 1rem;
+}
+
+.navbar .hidden .tulisan1, .navbar .hidden .tulisan2,.navbar .hidden .tulisan3 {
+    width: 0%;
+}
+.navbar .hidden .tulisan1 a, .navbar .hidden .tulisan2 a,.navbar .hidden .tulisan3 a{
+    font-size: 0rem;
+    
+}
+
+.hidden a:hover{
+    opacity: 80%;
+}
+
+
+.hidden.active{
+    width: 10rem;
+    height: 120%;
+} 
+
+.navbar .hidden .tulisan1.active, .navbar .hidden .tulisan2.active,.navbar .hidden .tulisan3.active {
+    width: 70%;
+    padding: 0.4rem 0.5rem;
+    margin: 0.5rem 0;
+    background-color: #D9D9D9;
+    border-radius: 1rem;
+    text-align: center;
+}
+.navbar .hidden .tulisan1 a.active, .navbar .hidden .tulisan2 a.active,.navbar .hidden .tulisan3 a.active{
+    font-size: 0.7rem;
+    color: #322D29;
+    font-weight: 600;
+    
+}
+
+
+
+@media(min-width: 1366px){
+    html{
+        font-size: 100%; 
+    }
+  
+    .navbar{
+        padding: 1.4rem 3%;
+    }
+    
+    .navbar .logo img{
+        width: 13rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.2rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+
+    .banner .tulisan{
+        font-size: 4.7rem;
+    }
+
+    .banner .button{
+        padding: 1.2rem 2rem;
+    }
+
+    .banner .button a{
+        font-size: 2.7rem;
+    }
+
+    .bestseller h2, .bestseller a{
+        font-size: 3.7rem;
+    }
+
+    .foto1 img, .foto2 img, .foto3 img, .foto4 img{
+        max-width: 16rem;
+    }
+
+    .katalog .kolomwanita, .katalog .kolompria{
+        width: 75rem;
+        margin-bottom: 5rem;
+        padding: 15rem 7% 1.4rem;
+    }
+    
+    .kolomwanita h2, .kolompria h2{
+        font-size: 3.6rem;
+    }
+    
+    .kolompria .keseluruhan, .kolompria .tulisan, .kolomwanita .keseluruhan, .kolomwanita .tulisan{
+        width: 70rem;
+        margin-top: 2rem; 
+    }
+    
+    .kolomwanita .buttonwanita,.kolompria .buttonpria {
+        width: 15rem;
+        padding: 1rem 1.3rem;
+        border-radius: 5rem;
+    }
+    
+    .kolomwanita .buttonwanita p,.kolompria .buttonpria p{
+        font-size: 2.1rem;
+        
+    }
+
+    .endpart{
+        padding: 35rem 7% 1.4rem;
+    } 
+}
+@media(min-width: 1920px){
+    html{
+        font-size: 120%; 
+    }
+  
+    .navbar{
+        padding: 1.3rem 2%;
+    }
+    
+    .navbar .logo img{
+        width: 18rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.5rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    .banner .tulisan{
+        font-size: 5rem;
+    }
+
+    .banner .button{
+        padding: 1.4rem 2.5rem;
+    }
+
+    .banner .button a{
+        font-size: 3.5rem;
+    }
+
+    .bestseller h2, .bestseller a{
+        font-size: 4rem;
+    }
+
+    .foto1 img, .foto2 img, .foto3 img, .foto4 img{
+        max-width: 20rem;
+    }
+
+    .katalog .kolomwanita, .katalog .kolompria{
+        width: 85rem;
+        margin-bottom: 7rem;
+        padding: 20rem 7% 1.4rem;
+    }
+    
+    .kolomwanita h2, .kolompria h2{
+        font-size: 4.5rem;
+    }
+    
+    .kolompria .keseluruhan, .kolompria .tulisan, .kolomwanita .keseluruhan, .kolomwanita .tulisan{
+        width: 85rem;
+        margin-top: 3rem; 
+    }
+    
+    .kolomwanita .buttonwanita,.kolompria .buttonpria {
+        width: 18rem;
+        padding: 1.4rem 2.5rem;
+        border-radius: 5rem;
+    }
+    
+    .kolomwanita .buttonwanita p,.kolompria .buttonpria p{
+        font-size: 2.6rem;
+        
+    }
+
+    .endpart{
+        padding: 40rem 7% 1.4rem;
+    } 
+}
+
+
+
+
+

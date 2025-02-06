@@ -1,0 +1,228 @@
+/*hitam : 322D29*/
+/*abu-abu : D9D9D9*/
+/*putih : FFF*/
+/*merah gelap : 72383D*/
+/*merah terang(hover) : 925056*/
+/*krem(background) : EFE9E1*/
+
+*{
+    font-family : 'Inter',sans-serif;
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family : 'Inter',sans-serif;
+    background-color: #EFE9E1;
+    color: #322D29;
+    font-size: 16px;
+    
+}
+
+
+
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding : 1.3rem 3% ;
+    background-color: #322D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo{
+    margin-right:5rem;
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+.navbar .search{
+    width: 38rem;
+    height: 7vh;
+    display: flex; 
+    /* border: 0.1rem solid white;
+    border-radius: 20rem; */
+}
+.navbar .search input{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+    
+} 
+.navbar .kanan{
+    margin-left:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.navbar .keranjang{
+    width: 5rem;
+    font-size: 3rem;
+    color: #D9D9D9;
+    margin-right: 0.2rem;
+}
+.navbar .user{
+    width: 5rem;
+    font-size: 3rem;
+    color: #D9D9D9;
+    margin-left: 0.2rem;
+}
+
+.keranjang :hover{
+    color: #925056;
+
+}
+.user:hover{
+    color: #925056;
+}
+
+.semua{
+    display: flex;
+    justify-content: flexstart; 
+    align-items: center; 
+    margin-top: 11vh;
+    height: 100vh;
+    width: 100%;
+    background-color: #EFE9E1;
+}
+
+.semua .kolom1{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+}
+
+.semua .kolom1 .judul{
+    padding: 2rem 3rem;
+    color: #72383D;
+    font-size: 2.7rem;
+    font-weight: 500;
+
+}
+
+.semua .kolom1 .gambar{
+    margin-left: -1rem;
+    width: 50%;
+    height: 40%;
+    background-image: url(../useracc/orang.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: 0.3rem solid #322D29;
+    margin-bottom: 5%;
+}
+
+.semua .kolom1 .icon{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    margin: 2rem;
+    width: 60%;
+    height: 8vh;
+    background-repeat: no-repeat;
+}
+
+.semua .kolom1 .icon .edit ,.semua .kolom1 .icon .track, .semua .kolom1 .icon .keranjang {
+    font-size: 4rem;
+    color: #72383D;
+}
+
+.semua .kolom1 .icon .edit{
+    opacity: 80%;
+}
+a{
+    text-decoration: none;
+    color: #72383D;
+}
+
+.semua .kolom1 .icon .edit:hover ,.semua .kolom1 .icon .track:hover, .semua .kolom1 .icon .keranjang:hover {
+    opacity: 80%;
+}
+
+.semua .kolom2{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    height: 100%; 
+}
+
+.semua .kolom2 .tulisan {
+    margin-top: -5%;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.semua .kolom2 .tulisan h3{
+    font-size: 28px;
+    font-weight:500;
+}
+
+.semua .kolom2 .tulisan p{
+    font-size: 20px;
+}
+
+.semua .kolom2 .tulisan input{
+    margin-left: 0.5rem;
+    font-size: 20px;
+    background: none;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #322D29;
+}
+
+.semua .kolom2 .tulisan button{
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    background: none;
+    padding: 1rem 2rem;
+    background-color: #72383D;
+    
+}
+.semua .kolom2 .tulisan button a{
+    color: #D9D9D9;
+    
+}
+.endpart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*horisontal*/
+    justify-content: center;/*vertikal*/
+    background-image: url(../../home/icon/end\ part.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 31rem 7% 1.4rem;
+    
+} 

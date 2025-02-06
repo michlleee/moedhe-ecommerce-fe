@@ -1,0 +1,713 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /* border: 1px solid black; */
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 120px;
+}
+
+.quantity-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.8ch;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 120px;
+}
+
+.quantity-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.8ch;
+}
+
+.amount{
+    font-size: 2ch;
+}
+
+.plus-sign{
+    margin-bottom: 5px;
+    color: black;
+}
+.minus-sign{
+    color: black;
+}
+
+
+
+.quantity-container1 {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 120px;
+}
+
+.quantity-container1 button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.8ch;
+}
+
+.quantity-container1 {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 120px;
+}
+
+.quantity-container1 button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.8ch;
+}
+
+.amount1{
+    font-size: 2ch;
+}
+
+.plus-sign1{
+    margin-bottom: 5px;
+    color: black;
+}
+.minus-sign1{
+    color: black;
+}
+
+
+a{
+    color: inherit;
+}
+
+.cart-link{
+    text-decoration: none;
+}
+
+.user-link{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding : 1.3rem 3% ;
+    width: 100%;
+    background-color: #322D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo{
+    margin-right:5rem;
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+.navbar .search{
+    width: 38rem;
+    height: 7vh;
+    display: flex; 
+    /* border: 0.1rem solid white;
+    border-radius: 20rem; */
+}
+.navbar .search input{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    
+} 
+.navbar .kanan{
+    margin-left:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.navbar .keranjang{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-right: 0.2rem;
+}
+.navbar .user{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-left: 0.2rem;
+}
+
+.keranjang :hover{
+    color: #925056;
+
+}
+.user:hover{
+    color: #925056;
+}
+
+
+
+body{
+    background-color: #EFE9E1;
+    font-family: 'Inter', 'sansserif';
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* Heading - Navbar */
+
+/* .logo-box{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 48px;
+    padding-right: 4px;
+}
+.logo-text{
+    height: 36px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding : 1.3rem 3% ;
+    background-color: #322D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo{
+    margin-right:5rem;
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+.navbar .search{
+    width: 38rem;
+    height: 7vh;
+    display: flex; 
+    border: 0.1rem solid white;
+    border-radius: 20rem;
+}
+.navbar .search .input input{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+    
+} 
+.navbar .kanan{
+    margin-left:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.navbar .keranjang{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-right: 0.2rem;
+}
+.navbar .user{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-left: 0.2rem;
+}
+
+.keranjang :hover{
+    color: #925056;
+
+}
+.user:hover{
+    color: #925056;
+} */
+
+
+
+.back-button{
+    display: flex;
+    width: 88px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.back-icon{
+    font-size: 4rem;
+}
+
+.back-text{
+    font-size: 20px;
+    transform: translate(-10%, 0);
+}
+
+
+
+
+#nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-items li{
+    list-style: none;
+    padding: 0 16px;
+}
+
+.nav-icon{
+    font-size: 32px;
+    color: #EFE9E1;
+}
+
+/* Cart */
+
+#cart{
+    padding: 10rem 10%;
+}
+
+.back-button{
+    display: flex;
+    width: 88px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.back-icon{
+    font-size: 20px;
+}
+
+.back-text{
+    font-size: 20px;
+    transform: translate(-10%, 0);
+}
+
+#cart h1{
+    margin: 20px 0;
+}
+
+.cart-container{
+    padding: 0 20px;
+}
+
+.product-container{
+    display: flex;
+    margin: 32px 0;
+    position: relative;
+}
+
+.price{
+    font-size: 20px;
+}
+
+.price1{
+    font-size: 20px;
+}
+
+.harga{
+    display: flex;
+}
+
+.harga1{
+    display: flex;
+}
+
+.stock-txt{
+    margin-top: 3px;
+}
+
+.product-container img{
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+}
+
+
+.product-container1{
+    display: flex;
+    margin: 32px 0;
+    position: relative;
+}
+
+.product-container1 img{
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+}
+
+.details{
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.details1{
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.size span, .color span{
+    color: rgba(48, 43, 39, 0.7);
+}
+
+.product-count{
+    display: flex;
+    border: 1px solid #322D29;
+    width: 120px;
+    align-items: center;
+    padding: 8px 12px;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.delete-icon{
+    right: 0px;
+    top: 0px;
+    transform: translate(0, 45%);
+    position: absolute;
+    font-size: 28px;
+}
+
+.summary{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.summary p{
+    font-size: 24px;
+}
+
+.notes p{
+    padding-bottom: 12px;
+}
+
+.summary form{
+    width: 320px;
+    height: 35px;
+    border: 1px solid #322D29;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 12px;
+}
+
+.summary form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    color: #322D29;
+}
+
+.subtotal{
+    flex-grow: 2;
+    text-align: right;
+}
+
+.subtotal span{
+    color: #72383D;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.checkout-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    border-radius: 16px;
+    background-color: #72383D;
+    color: #EFE9E1;
+    border: none;
+    transform: translate(0, -20%);
+}
+
+.checkout-btn p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-right: 16px;
+    letter-spacing: 1px;
+}
+
+.endpart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/*horisontal*/
+    justify-content: center;/*vertikal*/
+    background-image: url(../home/icon/end\ part.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 26rem 7% 1.4rem;
+    
+} 
+
+@media (max-width: 1160px){
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .back-icon{
+        font-size: 18px;
+    }
+
+    .back-text{
+        font-size: 18px;
+    }
+
+    .product-count{
+        padding: 6px 8px;
+        width: 90px;
+    }
+    
+    .product-count span{
+        font-size: 18px;
+    }
+
+    .summary p{
+        font-size: 18px;
+    }
+
+
+    .summary form{
+        padding: 16px 10px;
+        width: 250px;
+    }
+
+    .summary form input{
+        font-size: 16px;
+
+    }
+
+    .delete-icon{
+        font-size: 20px;
+        transform: translate(0, 65%);
+    }
+}
+
+@media (max-width: 996px){
+    .summary{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .checkout-box{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 686px) {
+    #header{
+        flex-wrap: wrap;
+    }
+
+    .search-box{
+        order: 2;
+    }
+
+    .summary{
+        flex-direction: column;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+@media(min-width: 1366px){
+    html{
+        font-size: 100%; 
+    }
+  
+    .navbar{
+        padding: 1.4rem 3%;
+    }
+    
+    .navbar .logo img{
+        width: 13rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.2rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+
+    .banner .tulisan{
+        font-size: 4rem;
+    }
+
+    .banner .button{
+        padding: 1.2rem 2rem;
+    }
+
+    .banner .button a{
+        font-size: 2.5rem;
+    }
+
+    .bestseller h2, .bestseller a{
+        font-size: 3.6rem;
+    }
+
+    .foto1 img, .foto2 img, .foto3 img, .foto4 img{
+        max-width: 16rem;
+    }
+
+    .katalog .kolomwanita, .katalog .kolompria{
+        width: 70rem;
+        margin-bottom: 5rem;
+        padding: 15rem 7% 1.4rem;
+    }
+    
+    .kolomwanita h2, .kolompria h2{
+        font-size: 3.6rem;
+    }
+    
+    .kolompria .keseluruhan, .kolompria .tulisan, .kolomwanita .keseluruhan, .kolomwanita .tulisan{
+        width: 70rem;
+        margin-top: 2rem; 
+    }
+    
+    .kolomwanita .buttonwanita,.kolompria .buttonpria {
+        width: 15rem;
+        padding: 1rem 1.3rem;
+        border-radius: 5rem;
+    }
+    
+    .kolomwanita .buttonwanita p,.kolompria .buttonpria p{
+        font-size: 2.1rem;
+        
+    }
+
+    .endpart{
+        padding: 35rem 7% 1.4rem;
+    } 
+}
+@media(min-width: 1920px){
+    html{
+        font-size: 120%; 
+    }
+  
+    .navbar{
+        padding: 1.3rem 2%;
+    }
+    
+    .navbar .logo img{
+        width: 18rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.5rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+    .endpart{
+        padding: 40rem 7% 1.4rem;
+    } 
+}

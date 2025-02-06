@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+.cart-link{
+    text-decoration: none;
+}
+
+.user-link{
+    text-decoration: none;
+}
+
+body {
+    margin: 90px 0 0; 
+    padding: 0;
+    background-color: rgb(239, 233, 225);
+    height: 1800px;
+    font-family: "Inter", sans-serif;
+}
+
+li,a{
+    /* font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none; */
+    background-color: rgb(50, 45, 41);
+    height: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding : 1.3rem 3% ;
+    background-color: #322D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo{
+    margin-right:5rem;
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+.navbar .search{
+    width: 38rem;
+    height: 7vh;
+    display: flex; 
+    /* border: 0.1rem solid white;
+    border-radius: 20rem; */
+}
+.navbar .search input{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    
+} 
+.navbar .kanan{
+    margin-left:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 3rem;
+}
+.navbar .keranjang{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-right: 0.2rem;
+}
+.navbar .user{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-left: 0.2rem;
+}
+
+.keranjang :hover{
+    color: #925056;
+
+}
+.user:hover{
+    color: #925056;
+}
+
+
+.back-button{
+    margin-left: 11rem;
+    margin-top: 2rem;
+    display: flex;
+    width: 88px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.back-icon{
+    font-size: 20px;
+}
+
+.back-text{
+    font-size: 20px;
+    transform: translate(-10%, 0);
+}
+.nav_links{
+    list-style: none;
+    padding-right: 30px;
+}
+
+.nav_links li{
+    display: inline-block;
+    /* display: 0px, 20px; */
+    transition: background-color 1s;
+    padding: 7px;
+}
+
+.nav_links li a{
+    transform: all 0.3s ease 0s;
+    transition: opacity 0.8s;
+}
+
+.nav_links li a:hover{
+    opacity: 0.5;
+}
+
+.info {
+    margin-top: 20px; /* Adjust as needed */
+    padding: 20px;
+    background-color: rgb(239, 233, 225);
+}
+
+.back{
+    margin-top: 55px;
+    margin-left: 108px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    display: inline-flex; 
+    align-items: center; 
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.back:hover{
+    opacity: 0.5;
+}
+
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-div{
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(239, 233, 225);
+    border-radius: 3px;
+    column-gap: 10px;
+}
+.product-div-left{
+    padding: 0px;
+}
+.product-div-right{
+    padding: 10px;
+}
+
+.img-container img{
+    width: 530px;
+    height: 750px;
+    margin-right: 50px;
+    box-shadow: 2px 2px 10px rgb(149, 149, 149);
+    border-radius: 10px;
+}
+
+.click-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.click-container div{
+    border: 2px solid rgba(183, 182, 182, 0.7);
+    padding: 1px;
+    border-radius: 4px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 3px rgb(207, 207, 207);
+}
+
+.active{
+    border-color: rgb(149, 71, 81)!important;
+}
+
+.click-container div:active{
+    border-color: rgb(149, 71, 81);
+}
+
+.click-container div img{
+    width: 100px;
+    cursor: pointer;
+}
+.product-div-right span{
+    display: block;
+}
+
+.wa-img{
+    width: 40px;
+    height: 40px;
+}
+
+.product-name{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 4ch;
+}
+
+.sold-this-month{
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    margin: 0;
+}
+
+#green-text{
+    color: green;
+    background-color: none;
+    font-weight:900;
+}
+
+.seperator1{
+    margin-left: 10px;
+}
+
+.product-rating button {
+    background: none;
+    border-radius: 8px;
+    border-width: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+
+.extra-info{
+    display: flex;
+    align-items: center;
+}
+
+.product-rating span {
+    margin-right: 5px;
+}
+
+.product-price{
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 3.8ch;
+    font-weight: 500;
+}
+
+.seperator-long{
+    margin-top: 12px;
+}
+
+.size span{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.8ch;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.size-buttons{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.size-buttons button{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(57, 57, 57);
+    border-width: 1px;
+    font-size: 2ch;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: inherit;
+    margin-right: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+    transition-duration: 1s;
+}
+.size-buttons button:hover{
+    height: 35px;
+    width: 65px;
+}
+
+.color span{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.8ch;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.color button{
+    margin-top: 10px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    font-size: 2ch;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(36, 82, 114);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.size, .color, .Contact {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 95px;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    margin-top: 12px;
+    width: 120px;
+}
+
+.quantity-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2.8ch;
+}
+
+.amount{
+    font-size: 2ch;
+}
+
+.plus-sign{
+    color: green;
+}
+.minus-sign{
+    color: gray;
+}
+
+.stock{
+    display: flex;
+    align-items: center;
+}
+
+.stock-txt{
+    font-family: "Inter", sans-serif;
+    font-size: 1.8ch;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.buttons-options-2{
+    display: flex;
+}
+
+.waNotif{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8ch;
+    margin-top: 25px;
+    margin-left: 150px;
+}
+
+.waNotif p{
+    margin-left: 10px;
+    padding-top: 4px;
+    font-weight: 600;
+    text-decoration:underline;
+}
+
+
+.main-button{
+    display: flex;
+    margin-top: 40px;
+}
+
+.add-to-cart button{
+    font-family: "Inter", sans-serif;
+    font-size: 1.8ch;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: rgb(114, 56, 61);
+    border: none;
+    border-radius: 23px;
+    width: 268px;
+    height: 48px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.538);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.add-to-cart button:hover{
+    opacity: 0.8;
+    width: 280px;
+    height: 50px;
+}
+
+.check-out button{
+    font-family: "Inter", sans-serif;
+    font-size: 1.8ch;
+    font-weight: 600;
+    color: rgb(114, 56, 61); 
+    background-color: rgb(250, 247, 241);
+    border: none;
+    border-radius: 23px;
+    width: 268px;
+    height: 48px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.339);
+    margin-left: 50px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.check-out button:hover{
+    color: rgb(62, 28, 30); 
+    background-color: rgb(191, 183, 168);
+    width: 280px;
+    height: 50px;
+}
+
+a{
+    background-color: transparent;
+}
+
+.info-options{
+    font-family: "Inter", sans-serif;
+    font-size: 2.1ch;
+    display: flex;
+    font-weight: bolder;
+    gap: 10%;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.border{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: -2.2ch;
+    padding: 0;
+}
+
+.info-options .active {
+    color: rgb(114, 56, 61);
+    border-bottom: 3px solid rgb(114, 56, 61);
+    transition-duration: 0.3s;
+}
+
+.product-div-bottom{
+    height: 300;
+    width: 100%;
+}
+
+.similar-items{
+    font-family: "Inter", sans-serif;
+    font-size: 2.4ch;
+    display: flex;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    margin-top: 130px;
+}
+
+.border2{
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.3);
+    margin-top: -2.2ch;
+    width: 38%;
+    padding: 0;
+}
+
+.product-recommendations{
+    display: flex;
+    width: 200px;
+    gap: 20px;
+}
+
+.product-recommendations img{
+    border-radius: 12px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.339);
+    transition: width 0.5s ease;
+}
+
+.product-recommendations img:hover{
+    width: 210px;
+    box-shadow: 0 4px 5px rgb(114, 56, 61);
+}
+
+
+/*REVIEW*/
+
+.reviewvios {
+    position: relative;
+    margin: 90px 0 0; /* Adjusted margin to make space for the fixed navigation bar */
+    padding: 0;
+    background-color: rgb(239, 233, 225);
+    height: 1800px;
+    font-family: 'Inter';
+    height: 50%;
+
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: rgb(149, 71, 81);
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+
+hr {
+    border: none; /* Remove default border */
+    height: 1px; /* Set height */
+    background-color: #333; /* Set background color */
+    margin: 20px 0; /* Add spacing above and below the line */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+header {
+    position: relative; /* Set position to relative */
+}
+
+.rating {
+    position: absolute; /* Position absolutely */
+    font-size: 4.5em;
+    font-weight: lighter;
+    top: -50px; /* Adjust the top position to move it above the line */
+    color: black;
+    margin-bottom: 10px;
+    right: 22%;
+}
+
+.star {
+    position: absolute; /* Position absolutely */
+    top: -50px; /* Adjust the top position to move it above the line */
+    width: 150px;
+    height: 150px;
+    right: 10%;
+}
+
+.text2 {
+    position: absolute; /* Position absolutely */
+    font-weight: lighter;
+    font-size: 1.5em;
+    top: 25px; /* Adjust the top position to move it above the line */
+    color: gray;
+    margin-bottom: 10px;
+    right: 10%;
+}
+
+.box {
+    position: relative; /* Add position relative to make positioning of date easier */
+    width: 80%;
+    background-color: #F7F4EF;
+    border: none;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.date {
+    position: absolute; /* Position the date */
+    top: 10px;
+    right: 10px;
+    font-size: small;
+    color: #9E9E9E;
+}
+
+.pfp {
+    border-radius: 50%; /* Set border radius to 50% to make it a circle */
+    width: 150px; /* Set width of the image */
+    height: 150px; /* Set height of the image */
+    margin-right: 20px; /* Add some space between image and text */
+}
+
+.ProfileInfo {
+    flex: 1; /* Allow ProfileInfo to take up remaining space */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-header h2 {
+    margin-bottom: 2px; /* Reduce margin for closer spacing */
+    font-size: 25px;
+    margin-right: 10px; /* Add space between the name and the star rating */
+}
+
+.star-rating {
+    width: 130px; /* Adjust width as needed */
+    margin-left: 20px;
+}
+
+.ProfileInfo h5 {
+    font-size: small; 
+    margin-top: -40px; 
+    font-weight: lighter; 
+    color: #9E9E9E;
+}
+
+.ProfileInfo p {
+    margin: 5px 0; /* Reduce margin to control spacing between paragraphs */
+    font-weight: lighter;
+    word-wrap: break-word; /* Ensure text breaks properly */
+}
+
+.more-reviews-btn {
+    display: block;
+    width: 400px;
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 10px;
+    color: #42474C;
+    border: none;
+    font-size: 20px;
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer;
+}
+
+h1, h2{
+    font-family: "Inter", sans-serif; /* Set the desired font */
+}
+
+.end-part {
+    width: 100%;
+    background-image: url('end part.png');
+    background-size: cover; /* Cover the entire space */
+    background-repeat: no-repeat; 
+    min-height: 300px;
+}
+
+/* @media(min-width: 1920px){
+    html{
+        font-size: 120%; 
+    }
+  
+    .navbar{
+        padding: 1.3rem 2%;
+    }
+    
+    .navbar .logo img{
+        width: 18rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.5rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+
+} */
+
+@media (max-width: 1160px){
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .back-icon{
+        font-size: 18px;
+    }
+
+    .back-text{
+        font-size: 18px;
+    }
+
+    .product-count{
+        padding: 6px 8px;
+        width: 90px;
+    }
+    
+    .product-count span{
+        font-size: 18px;
+    }
+
+    .summary p{
+        font-size: 18px;
+    }
+
+
+    .summary form{
+        padding: 16px 10px;
+        width: 250px;
+    }
+
+    .summary form input{
+        font-size: 16px;
+
+    }
+
+    .delete-icon{
+        font-size: 20px;
+        transform: translate(0, 65%);
+    }
+}
+
+@media (max-width: 996px){
+    .summary{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .checkout-box{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 686px) {
+    #header{
+        flex-wrap: wrap;
+    }
+
+    .search-box{
+        order: 2;
+    }
+
+    .summary{
+        flex-direction: column;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+@media(min-width: 1366px){
+    html{
+        font-size: 100%; 
+    }
+  
+    .navbar{
+        padding: 1.4rem 3%;
+    }
+    
+    .navbar .logo img{
+        width: 13rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.2rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+
+    .banner .tulisan{
+        font-size: 4rem;
+    }
+
+    .banner .button{
+        padding: 1.2rem 2rem;
+    }
+
+    .banner .button a{
+        font-size: 2.5rem;
+    }
+
+    .bestseller h2, .bestseller a{
+        font-size: 3.6rem;
+    }
+
+    .foto1 img, .foto2 img, .foto3 img, .foto4 img{
+        max-width: 16rem;
+    }
+
+    .katalog .kolomwanita, .katalog .kolompria{
+        width: 70rem;
+        margin-bottom: 5rem;
+        padding: 15rem 7% 1.4rem;
+    }
+    
+    .kolomwanita h2, .kolompria h2{
+        font-size: 3.6rem;
+    }
+    
+    .kolompria .keseluruhan, .kolompria .tulisan, .kolomwanita .keseluruhan, .kolomwanita .tulisan{
+        width: 70rem;
+        margin-top: 2rem; 
+    }
+    
+    .kolomwanita .buttonwanita,.kolompria .buttonpria {
+        width: 15rem;
+        padding: 1rem 1.3rem;
+        border-radius: 5rem;
+    }
+    
+    .kolomwanita .buttonwanita p,.kolompria .buttonpria p{
+        font-size: 2.1rem;
+        
+    }
+
+    .endpart{
+        padding: 35rem 7% 1.4rem;
+    } 
+}
+@media(min-width: 1920px){
+    html{
+        font-size: 120%; 
+    }
+  
+    .navbar{
+        padding: 1.3rem 2%;
+    }
+    
+    .navbar .logo img{
+        width: 18rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.5rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+    .endpart{
+        padding: 40rem 7% 1.4rem;
+    } 
+}
+
+

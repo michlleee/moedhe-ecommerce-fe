@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 100%;
+    height: 100%; */
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    background-color: #EFE9E1;
+}
+
+.cart-link{
+    text-decoration: none;
+}
+
+.user-link{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding : 1.3rem 3% ;
+    width: 100%;
+    background-color: #322D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo{
+    margin-right:5rem;
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+.navbar .search{
+    width: 38rem;
+    height: 7vh;
+    display: flex; 
+    /* border: 0.1rem solid white;
+    border-radius: 20rem; */
+}
+.navbar .search input{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    
+} 
+.navbar .kanan{
+    margin-left:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.navbar .keranjang{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-right: 0.2rem;
+}
+.navbar .user{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-left: 0.2rem;
+}
+
+.keranjang :hover{
+    color: #925056;
+
+}
+.user:hover{
+    color: #925056;
+}
+
+
+/* .cart-link{
+    text-decoration: none;
+}
+
+.user-link{
+    text-decoration: none;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding : 1.3rem 3% ;
+    background-color: #322D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .logo{
+    margin-right:5rem;
+    width: 16rem;
+    padding-right: 2rem;
+}
+
+.navbar .search{
+    width: 38rem;
+    height: 7vh;
+    display: flex; 
+    border: 0.1rem solid white;
+    border-radius: 20rem;
+}
+.navbar .search input{
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    
+} 
+.navbar .kanan{
+    margin-left:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+}
+.navbar .keranjang{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-right: 0.2rem;
+}
+.navbar .user{
+    width: 5rem;
+    font-size: 2.5rem;
+    color: #D9D9D9;
+    margin-left: 0.2rem;
+}
+
+.keranjang :hover{
+    color: #925056;
+
+}
+.user:hover{
+    color: #925056;
+} */
+
+.main-content {
+    display: flex;
+    margin-top: 100px; 
+    padding: 20px;
+}
+
+.map-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-image {
+    width: 1097px;
+    height: 1075px;
+    
+}
+
+.details-section {
+    width: 350px;
+    margin-left: 20px;
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-section h2 {
+    margin-bottom: 10px;
+}
+
+.address p, .order-details p {
+    margin-bottom: 10px;
+}
+
+.order-details img {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons .btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    background-color: #72383D;
+    color: white;
+    border-radius: 23px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons .btn:hover {
+    background-color: #925056;
+}
+
+.endpart {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 22%;
+    background-image: url('end part.png');
+    background-size: cover;
+    background-position: center center;
+    min-height: 300px;
+}
+@media(min-width: 1920px){
+    html{
+        font-size: 120%; 
+    }
+  
+    .navbar{
+        padding: 1.3rem 2%;
+    }
+    
+    .navbar .logo img{
+        width: 18rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.5rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+
+}
+
+
+@media (max-width: 1160px){
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .back-icon{
+        font-size: 18px;
+    }
+
+    .back-text{
+        font-size: 18px;
+    }
+
+    .product-count{
+        padding: 6px 8px;
+        width: 90px;
+    }
+    
+    .product-count span{
+        font-size: 18px;
+    }
+
+    .summary p{
+        font-size: 18px;
+    }
+
+
+    .summary form{
+        padding: 16px 10px;
+        width: 250px;
+    }
+
+    .summary form input{
+        font-size: 16px;
+
+    }
+
+    .delete-icon{
+        font-size: 20px;
+        transform: translate(0, 65%);
+    }
+}
+
+@media (max-width: 996px){
+    .summary{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .checkout-box{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 686px) {
+    #header{
+        flex-wrap: wrap;
+    }
+
+    .search-box{
+        order: 2;
+    }
+
+    .summary{
+        flex-direction: column;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+@media(min-width: 1366px){
+    html{
+        font-size: 100%; 
+    }
+  
+    .navbar{
+        padding: 1.4rem 3%;
+    }
+    
+    .navbar .logo img{
+        width: 13rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.2rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
+
+    .banner .tulisan{
+        font-size: 4rem;
+    }
+
+    .banner .button{
+        padding: 1.2rem 2rem;
+    }
+
+    .banner .button a{
+        font-size: 2.5rem;
+    }
+
+    .bestseller h2, .bestseller a{
+        font-size: 3.6rem;
+    }
+
+    .foto1 img, .foto2 img, .foto3 img, .foto4 img{
+        max-width: 16rem;
+    }
+
+    .katalog .kolomwanita, .katalog .kolompria{
+        width: 70rem;
+        margin-bottom: 5rem;
+        padding: 15rem 7% 1.4rem;
+    }
+    
+    .kolomwanita h2, .kolompria h2{
+        font-size: 3.6rem;
+    }
+    
+    .kolompria .keseluruhan, .kolompria .tulisan, .kolomwanita .keseluruhan, .kolomwanita .tulisan{
+        width: 70rem;
+        margin-top: 2rem; 
+    }
+    
+    .kolomwanita .buttonwanita,.kolompria .buttonpria {
+        width: 15rem;
+        padding: 1rem 1.3rem;
+        border-radius: 5rem;
+    }
+    
+    .kolomwanita .buttonwanita p,.kolompria .buttonpria p{
+        font-size: 2.1rem;
+        
+    }
+
+    .endpart{
+        padding: 35rem 7% 1.4rem;
+    } 
+}
+@media(min-width: 1920px){
+    html{
+        font-size: 120%; 
+    }
+  
+    .navbar{
+        padding: 1.3rem 2%;
+    }
+    
+    .navbar .logo img{
+        width: 18rem;
+    }
+
+    .navbar .search input{
+        font-size: 1.5rem;
+    } 
+
+    .navbar .keranjang{
+        font-size: 4rem;
+        margin-right: 1rem;
+    }
+
+    .navbar .user{
+        font-size: 4rem;
+        margin-left: 1rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+    .endpart{
+        padding: 40rem 7% 1.4rem;
+    } 
+}
+
+
